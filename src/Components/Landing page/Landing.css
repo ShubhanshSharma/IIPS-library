@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .need_help_button{
+  visibility: hidden;
+
+}
+
+@media screen and (max-width: 768px) {
+  .need_help_button {
+    visibility: visible;
+  }
+} */

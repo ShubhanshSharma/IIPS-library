@@ -35,7 +35,7 @@ export default function LoginSection(){
   };
 
     return(
-        <form className=' m-auto w-max flex flex-col items-start gap-3 text-white' onSubmit={handleSubmit}>
+        <form className=' m-auto max-w-full flex flex-col p-3 items-start md: -mt-12 gap-3 text-white' onSubmit={handleSubmit}>
 
             <label className=' flex flex-col items-start w-full'>
                 Email
@@ -70,18 +70,18 @@ export default function LoginSection(){
                     />
                     Remember 
                 </label>
-                <span>Forgot Your Password?</span>
+                <span className=' text-sm'>Forgot Your Password?</span>
             </div>
 
             <button 
                 type="submit"
-                className='text-[#ef7115] text-[14px] mx-auto mt-2 border-2 border-[#ef7115] rounded-full px-5 pb-1'>
+                className='text-[#ef7115] text-[14px] mx-auto my-2 border-2 border-[#ef7115] rounded-full px-5 pb-1'>
                 <Link to='/dashboard'>Login</Link>
             </button>
 
             <div className=' flex flex-row text-white text-[14px] mx-auto gap-3'>
                 <p>Not a User?</p> 
-                <span className='text-[#ef7115] font-semibold underline underline-offset-2'>Signup Now</span>
+                <button className='text-[#ef7115] font-semibold underline underline-offset-2'>Signup Now</button>
             </div>
         </form>
     )
