@@ -1,28 +1,28 @@
+.bgTextureDiv {
+  position: relative;
+  border-left: 1px solid white; /* Solid white border on all sides */
+  border-top: 1px solid white; /* Solid white border on all sides */
+}
 
+.bgTextureDiv::before,
+.bgTextureDiv::after {
+  content: '';
+  position: absolute;
+  background: white;
+}
 
-.center_div_for_login {
-    border-top: 2px solid #fff; /* Solid color top border */
-    border-radius: 24px; /* Rounded corners */
-  }
-  
-  .center_div_for_login::before,
-  .center_div_for_login::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 1px; /* Width of the gradient border */
-    border-radius: 24px 0 0 24px; /* Match border-radius of parent */
-  }
-  
-  .center_div_for_login::before {
-    left: 0;
-    background: linear-gradient(to bottom, rgba(207, 145, 94, 0) 3%, rgba(207, 145, 94, 1) 6%, rgba(207, 145, 94, 0) 40%);
-    border-radius: 24px 0 0 24px; /* Rounded corners on the left */
-  }
-  
-  .center_div_for_login::after {
-    right: 0;
-    background: linear-gradient(to bottom, rgba(207, 145, 94, 0) 3%, rgba(207, 145, 94, 1) 6%, rgba(207, 145, 94, 0) 70%);
-    border-radius: 0 24px 24px 0; /* Rounded corners on the right */
-  }
+.bgTextureDiv::before {
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 1) 9%, rgba(255, 255, 255, 0) 70%);
+}
+
+.bgTextureDiv::after {
+  right: -1px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom,rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 1) 9%, rgba(255, 255, 255, 0) 70%);
+}

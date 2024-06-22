@@ -35,7 +35,7 @@ export default function LoginSection(){
   };
 
     return(
-        <form className=' m-auto max-w-full flex flex-col p-3 items-start md: -mt-12 gap-3 text-white' onSubmit={handleSubmit}>
+        <form className=' m-auto max-w-full flex flex-col p-3 items-start md:-mt-12 lg:mt-0 gap-3 text-white' onSubmit={handleSubmit}>
 
             <label className=' flex flex-col items-start w-full'>
                 Email

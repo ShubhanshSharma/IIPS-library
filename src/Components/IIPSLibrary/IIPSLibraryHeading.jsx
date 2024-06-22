@@ -6,7 +6,7 @@ import tilted_i from '../../Assets/tilted i.svg'
 export default function IIPSLibraryHeading(){
 
     return(
-        <div className='relative mx-auto w-max flex flex-col z-50 text-white justify-center items-center'>
+        <div className='relative w-max flex flex-col text-white justify-center items-center'>
 
             <div className='relative  h-max flex flex-row text-[32px] -ml-4 -mb-6 font-semibold justify-center items-center'>
                 <img src={i} className='  pt-3'></img>
