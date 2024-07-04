@@ -31,7 +31,7 @@ export default function Home(){
 
                 {/* Login section */}
                 <div className='relative m-auto '>
-                    <LoginSection />
+                    <LoginSection loginType={'student'}/>
                 </div>
 
                 {/* IIPS Library element */}

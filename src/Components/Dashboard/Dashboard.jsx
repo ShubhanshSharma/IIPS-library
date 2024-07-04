@@ -10,7 +10,8 @@ import SlidingButton from '../Sliding Button/slidingButton';
 import { gsap } from "gsap";
 import { useEffect, useState } from 'react';
 import searchIcon from '../../Assets/Search widget.svg';
-
+import default_user from '../../Assets/default user image.svg';
+import edit_icon from '../../Assets/Edit-icon 1.svg';
 
 export default function Dashboard(){
 
@@ -53,7 +54,11 @@ export default function Dashboard(){
             {/* MAIN DIV */}
             <div className='relative flex flex-row h-[90vh] md:h-[80vh] justify-center items-center w-[90%] m-auto py-3 gap-24'>
                 <div className='relative rounded-3xl m-auto z-30 h-full hidden lg:block w-2/6'>
-                    <BgTextureDiv height='100%' width='100%' />
+                    <BgTextureDiv height='100%' width='100%'  />
+                    <div className=' absolute top-0 w-full h-full bg-none z-40 text-white'>
+                        <img src={default_user} alt='user Image' className=' absolute top-12 w-28 left-[50%] -translate-x-14 opacity-80'/>
+                        <img src={edit_icon} alt="edit" className=' absolute top-2 right-2' />
+                    </div>
                 </div>
 
                 {/* Sliding divs and buttons to trigger slide */}

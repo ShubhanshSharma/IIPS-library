@@ -4,6 +4,8 @@ import homeImage from '../src/Assets/73Z_2108.w023.n001.896B.p1.896.jpg';
 import Landing from './Components/Landing page/Landing';
 import { Route, Routes } from 'react-router';
 import Dashboard from './Components/Dashboard/Dashboard';
+import LibraryManager from './Components/Library manager/libraryManager';
+import LibraryDashboard from './Components/libraryDashboard/libraryDashboard';
 
 function App() {
   return (
@@ -11,6 +13,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Landing />}/>
         <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/libraryManager' element={<LibraryManager />} />
+        <Route path='/libraryDashboard' element={<LibraryDashboard />} />
+
       </Routes>
 
       
