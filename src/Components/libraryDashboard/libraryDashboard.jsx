@@ -1,5 +1,6 @@
-import SideBar from "../sideBar/sideBar";
+import SideBar from "../librarySideBar/sideBar";
 import LibraryMainContainer from "../Library container/LibraryMainContainer";
+import LibraryHamburger from "../LibraryHamburger/LibraryHamburger";
 
 export default function LibraryDashboard(){
 
@@ -7,11 +8,15 @@ export default function LibraryDashboard(){
         <div className=" min-h-screen w-screen relative flex flex-col lg:flex-row overflow-hidden">
 
             <div>
-                <SideBar />
+                <SideBar highlight={'home'}/>
             </div>
 
             <div className=" relative flex flex-row w-full">
                 <LibraryMainContainer />
+            </div>
+
+            <div className="absolute top-0 left-full h-screen w-screen">
+                <LibraryHamburger highlight={'home'}/>
             </div>
 
         </div>

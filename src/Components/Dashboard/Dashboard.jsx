@@ -1,8 +1,5 @@
 import './Dashboard.css';
 import IIPSLibraryHeading from '../IIPSLibrary/IIPSLibraryHeading';
-import { Container } from '@mui/material';
-import {Box} from '@mui/material';
-import { Fullscreen } from '@mui/icons-material';
 import CircleElement from '../Circle/circle';
 import BgTextureDiv from '../BG Texture div/bgTextureDiv';
 import BurgerMenu from '../Burger Menu/burgerMenu';

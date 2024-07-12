@@ -1,5 +1,4 @@
 import './Landing.css';
-import homeImage from '../../Assets/73Z_2108.w023.n001.896B.p1.896.jpg';
 import bookmark from '../../Assets/book mark.svg'
 import IIPSLibrary from '../IIPSLibrary/IIPSLibrary';
 import LoginSection from '../LoginSection/LoginSection';

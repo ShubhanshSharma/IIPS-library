@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import homeImage from '../src/Assets/73Z_2108.w023.n001.896B.p1.896.jpg';
 import Landing from './Components/Landing page/Landing';
 import { Route, Routes } from 'react-router';
 import Dashboard from './Components/Dashboard/Dashboard';
 import LibraryManager from './Components/Library manager/libraryManager';
 import LibraryDashboard from './Components/libraryDashboard/libraryDashboard';
+import LibraryUsers from './Components/Library Users/LibraryUsers';
+import LibraryBooks from './Components/Library Books/LibraryBooks';
+
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/libraryManager' element={<LibraryManager />} />
         <Route path='/libraryDashboard' element={<LibraryDashboard />} />
+        <Route path='/libraryUsers' element={<LibraryUsers />} />
+        <Route path='/libraryBooks' element={<LibraryBooks />} />
+
 
       </Routes>
 
